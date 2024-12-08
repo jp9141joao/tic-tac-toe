@@ -55,6 +55,20 @@ Após as jogadas, as posições selecionadas são substituídas por `X` ou `O`.
 - **Python 3.6+**
 - Biblioteca `os` (já incluída nas distribuições padrão do Python).
 
+## **Observações**
+1. O código foi desenvolvido para funcionar no Windows. O comando `cls` utilizado para limpar a tela do terminal é específico do Windows.
+2. Caso esteja utilizando um sistema Linux ou MacOS, substitua o comando `cls` por `clear` no código para garantir que a limpeza da tela funcione corretamente:
+      **1** No código, substitua:
+        ```python
+        os.system('cls')  # Windows
+        ```
+      **2** Por:
+        ```python
+        os.system('clear')  # Linux/MacOS
+        ```
+3. Essa modificação é necessária para que o código funcione corretamente em diferentes sistemas operacionais.
+
+
 ---
 
 ## **Como Executar**
