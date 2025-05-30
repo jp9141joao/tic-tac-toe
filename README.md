@@ -1,43 +1,50 @@
-# **Jogo da Velha (Tic Tac Toe)**
+# **Tic Tac Toe**
 
-Este é um projeto em Python que implementa o clássico jogo da velha no terminal. O jogo oferece dois modos: **Jogar sozinho** (contra o computador com diferentes níveis de dificuldade) e **Jogar com um amigo** (modo multiplayer). 
-
----
-
-## **Funcionalidades**
-
-### **Modos de Jogo**
-1. **Jogar sozinho:** 
-   - Enfrente o computador com dificuldades ajustáveis:
-     - **Fácil:** Movimentos básicos.
-     - **Médio:** Estratégia intermediária.
-     - **Difícil:** Desafie sua habilidade!
-2. **Jogar com um amigo:** 
-   - Participe de uma partida no modo multiplayer, jogando no mesmo computador.
-
-### **Regras do Jogo**
-- O tabuleiro é composto por 9 posições numeradas de 1 a 9.
-- Cada jogador alterna entre as marcas `X` e `O`.
-- O vencedor é aquele que alinha três de suas marcas horizontalmente, verticalmente ou diagonalmente.
-- Caso todas as posições sejam preenchidas sem um vencedor, o jogo termina em empate.
+This is a Python project that implements the classic Tic Tac Toe game in the terminal. The game offers two modes: **Play Alone** (against the computer with different difficulty levels) and **Play with a Friend** (multiplayer mode).
 
 ---
 
-## **Como Jogar**
+## **Features**
 
-1. Execute o programa no terminal.
-2. Escolha um modo no menu inicial:
-   - **1** para jogar contra o computador.
-   - **2** para jogar com um amigo.
-   - **3** para sair do jogo.
-3. No modo **Jogar sozinho**, selecione o nível de dificuldade.
-4. Digite o número correspondente à posição desejada para fazer sua jogada.
-5. O placar é atualizado automaticamente após cada rodada.
+### **Game Modes**
+
+1. **Play Alone:**
+
+   * Face the computer with adjustable difficulties:
+
+     * **Easy:** Basic moves.
+     * **Medium:** Intermediate strategy.
+     * **Hard:** Challenge your skills!
+2. **Play with a Friend:**
+
+   * Play a multiplayer match on the same computer.
+
+### **Game Rules**
+
+* The board consists of 9 positions numbered 1 to 9.
+* Players alternate placing `X` and `O` marks.
+* The winner is the one who aligns three of their marks horizontally, vertically, or diagonally.
+* If all positions are filled without a winner, the game ends in a draw.
 
 ---
 
-## **Exemplo de Layout do Tabuleiro**
-Antes de cada jogada, o tabuleiro é exibido assim:
+## **How to Play**
+
+1. Run the program in the terminal.
+2. Choose a mode from the main menu:
+
+   * **1** to play against the computer.
+   * **2** to play with a friend.
+   * **3** to exit the game.
+3. In **Play Alone** mode, select the difficulty level.
+4. Enter the number corresponding to the desired position to make your move.
+5. The scoreboard updates automatically after each round.
+
+---
+
+## **Board Layout Example**
+
+Before each move, the board is displayed as follows:
 
 ```
  1  |  2  |  3  
@@ -47,38 +54,45 @@ Antes de cada jogada, o tabuleiro é exibido assim:
  7  |  8  |  9  
 ```
 
-Após as jogadas, as posições selecionadas são substituídas por `X` ou `O`. 
+After moves, the selected positions are replaced with `X` or `O`.
 
 ---
 
-## **Dependências**
-- **Python 3.6+**
-- Biblioteca `os` (já incluída nas distribuições padrão do Python).
+## **Dependencies**
 
-## **Observações**
-1. O código foi desenvolvido para funcionar no Windows. O comando `cls` utilizado para limpar a tela do terminal é específico do Windows.
-2. Caso esteja utilizando um sistema Linux ou MacOS, substitua o comando `cls` por `clear` no código para garantir que a limpeza da tela funcione corretamente:
-      **1** No código, substitua:
-        ```python
-        os.system('cls')  # Windows
-        ```
-      **2** Por:
-        ```python
-        os.system('clear')  # Linux/MacOS
-        ```
-3. Essa modificação é necessária para que o código funcione corretamente em diferentes sistemas operacionais.
-
+* **Python 3.6+**
+* `os` library (included in the standard Python distribution).
 
 ---
 
-## **Como Executar**
+## **Notes**
 
-1. Certifique-se de ter o Python 3 instalado no seu sistema.
-2. Baixe o código-fonte e salve-o em um arquivo chamado `jogo_da_velha.py`.
-3. Abra o terminal e navegue até o diretório onde o arquivo está salvo.
-4. Execute o comando:
-   ```bash
-   python jogo_da_velha.py
+1. The code is designed to run on Windows. The `cls` command used to clear the terminal screen is Windows-specific.
+2. If you are using Linux or MacOS, replace the `cls` command with `clear` in the code to ensure the screen clears correctly:
+   **1** Replace in the code:
+
+   ```python
+   os.system('cls')  # Windows
    ```
 
-Divirta-se e bons jogos! 😊
+   **2** With:
+
+   ```python
+   os.system('clear')  # Linux/MacOS
+   ```
+3. This modification is necessary for the code to work properly on different operating systems.
+
+---
+
+## **How to Run**
+
+1. Make sure Python 3 is installed on your system.
+2. Download the source code and save it as `tic_tac_toe.py`.
+3. Open the terminal and navigate to the directory where the file is saved.
+4. Run the command:
+
+   ```bash
+   python tic_tac_toe.py
+   ```
+
+Have fun and enjoy the game! 😊
